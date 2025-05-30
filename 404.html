@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y56KV1YSXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y56KV1YSXX');
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Universal reset for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        /* Gradient background applied to a fixed container */
+        .gradient-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(-45deg, #1a237e, #0d47a1, #64ffda, #00bcd4);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            z-index: -1;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* 404 section styling */
+        .error-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: calc(100vh - 50px);
+            padding-bottom: 50px;
+            color: white;
+        }
+
+        .error-content {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .error-content h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 0 0 15px #64ffda, 0 0 30px #00bcd4;
+        }
+
+        .error-content p {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px #64ffda;
+        }
+
+        .error-content a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #64ffda;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 0 8px #64ffda, 0 0 20px #00bcd4;
+            margin: 0 10px;
+        }
+
+        .error-content a:hover {
+            transform: scale(1.1);
+            background: #00bcd4;
+        }
+
+        /* Footer styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            color: #64ffda;
+            text-shadow: 0 0 8px #00bcd4;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .error-content h1 {
+                font-size: 2.5em;
+            }
+            .error-content p {
+                font-size: 1.2em;
+            }
+            .error-content a {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-container"></div>
+
+    <div class="error-page">
+        <div class="error-content">
+            <h1>404 - Page Not Found</h1>
+            <p>Oops! The file or page you're looking for doesn't exist.</p>
+            <a href="https://jzrr.uk">Return to Homepage</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 jzrr.uk </p>
+    </footer>
+</body>
+</html>
